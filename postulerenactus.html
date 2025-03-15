@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postuler à Enactus</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        footer {
+            position: relative;
+            top: 200%;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="page accueil.html">ESSECT Clubs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link active" href="postuler.html">Clubs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+            </div>
+        </nav>
+    
+        <!-- End Navigation Bar -->
+    </header> <br><br> <br>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row justify-content-center w-100">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg text-dark overflow-hidden" style="border-radius: 10px; max-width: 500px; margin: auto; background-color: white;">
+                    
+                    <!-- Image en haut -->
+                    <div class="position-relative" style="height: 200px; background: url('images/enactus3.jpg') no-repeat center center; background-size: cover;">
+                        <div class="position-absolute w-100 h-100 bg-dark bg-opacity-50"></div>]
+                        
+                    </div>
+
+                    <!-- Contenu du formulaire -->
+                    <div class="p-4">
+                        <form>
+                             <!-- Champ CIN -->
+                             <div class="mb-3">
+                                <label for="cin" class="form-label fw-bold"><span class="text-danger">* </span>Numéro CIN</label>
+                                <input type="text" class="form-control" id="cin" required>
+                            </div>
+
+                            <!-- Champ Nom -->
+                            <div class="mb-3">
+                                <label for="nom" class="form-label fw-bold"><span class="text-danger">* </span>Nom</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+
+                            <!-- Champ Prénom -->
+                            <div class="mb-3">
+                                <label for="prenom" class="form-label fw-bold"><span class="text-danger">* </span>Prénom</label>
+                                <input type="text" class="form-control" id="prenom" required>
+                            </div>
+
+                            <!-- Champ Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold"><span class="text-danger">* </span>Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="motivation" class="form-label fw-bold"><span class="text-danger">* </span>Pourquoi voulez-vous rejoindre ce club ?</label>
+                                <textarea class="form-control" id="motivation" rows="3" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="departement" class="form-label fw-bold"><span class="text-danger">* </span>Quel département souhaitez-vous rejoindre ?</label>
+                                <select class="form-select" id="departement" required>
+                                    <option value="">Sélectionnez un département</option>
+                                    <option value="communication et marketing">Communication</option>
+                                    <option value="communication et marketing"> marketing</option>
+                                    <option value="projet">Projet</option>
+                                    <option value="relations externes">Relations externes</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold"><span class="text-danger">* </span>Avez-vous une expérience dans ce domaine ?</label><br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="experience" value="oui" required>
+                                    <label class="form-check-label">Oui</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="experience" value="non">
+                                    <label class="form-check-label">Non</label>
+                                </div>
+                                <div class="mt-2">
+                                    <label for="experience_details" class="form-label"><span class="text-danger">* </span>Si oui, veuillez décrire votre expérience :</label>
+                                    <textarea class="form-control" id="experience_details" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="competences" class="form-label fw-bold"><span class="text-danger">* </span>Quelles compétences pensez-vous apporter au club ?</label>
+                                <textarea class="form-control" id="competences" rows="2" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold"><span class="text-danger">* </span>Combien d'heures par semaine pouvez-vous consacrer aux activités du club ?</label><br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="disponibilite" value="3h" required>
+                                    <label class="form-check-label">3h</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="disponibilite" value="4h">
+                                    <label class="form-check-label">4h</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="disponibilite" value="5h">
+                                    <label class="form-check-label">5h</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="disponibilite" value="6h">
+                                    <label class="form-check-label">6h</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="idee" class="form-label fw-bold"><span class="text-danger">* </span>Avez-vous des idées ou des suggestions pour le club ?</label>
+                                <textarea class="form-control" id="idee" rows="2"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="cv" class="form-label fw-bold"><span class="text-danger">* </span>Téléchargez votre CV :</label>
+                                <input type="file" class="form-control" id="cv" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary w-100">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <br> <br>
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2025 ESSECT Clubs. Tous droits réservés.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/postuler.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoLab - Bureau Membres</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bibliotheque Font Awesome pour les icônes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="page accueil.html">ESSECT Clubs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#membres">Membres</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Highlights">Highlights</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Réseaux sociaux">Réseaux sociaux</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
+     <br><br>
+<!-- InfoLab Section -->
+<section class="container my-5  text-center">
+    <div class="text-center mb-4">
+        <img src="ulpoad/infolab.jpg" alt="InfoLab Logo" class="img-fluid" style="max-width: 150px;">
+        <h2 class="mt-3">InfoLab</h2>
+        <a href="postulerInfolab.html" class="btn btn-dark">Join</a>
+    </div>
+    <!-- Qui sommes-nous ? Section -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4">Qui sommes-nous ?</h3>
+        
+        <h4 class="text-start">Description</h4>
+        <p class="lead text-start">
+            InfoLab est un club universitaire dédié à l’innovation technologique et à la collaboration entre passionnés d’informatique. 
+            Son objectif est de créer un espace d’apprentissage et d’échange où les membres développent leurs compétences à travers 
+            des projets concrets, des ateliers et des challenges. Le club vise également à intégrer les différentes disciplines de l’école 
+            pour montrer l’impact de l’informatique dans divers domaines et encourager une approche pluridisciplinaire de l’innovation.
+        </p>
+
+        <h4 class="text-start">Date de création</h4>
+        <p class="lead text-start">25 septembre 2022</p>
+
+        <h4 class="text-start">Marraine du club</h4>
+        <p class="lead text-start">Afef Slama</p>
+
+        <h4 class="text-start">Objectifs</h4>
+        <ul class="list-group list-group-flush text-start">
+            <li class="list-group-item"><strong>•</strong> Favoriser l’apprentissage et l’innovation à travers des ateliers, des formations et des projets pratiques.</li>
+            <li class="list-group-item"><strong>•</strong> Encourager la collaboration interdisciplinaire en intégrant l’informatique aux autres domaines d’étude de l’école.</li>
+            <li class="list-group-item"><strong>•</strong> Développer des compétences techniques et professionnelles en offrant aux membres des opportunités de travail sur des projets concrets.</li>
+            <li class="list-group-item"><strong>•</strong> Organiser des événements, workshops et challenges pour stimuler la créativité et l’esprit d’équipe.</li>
+            <li class="list-group-item"><strong>•</strong> Créer une communauté dynamique et solidaire où les passionnés de technologie peuvent échanger, apprendre et évoluer ensemble.</li>
+        </ul>
+
+    </div>
+
+    <h3 class="text-center mb-4">Bureau Membres</h3>
+
+    <div class="row justify-content-center" id="membres">
+        <!-- Nour Cherni -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card text-center shadow">
+                <img src="ulpoad/nourcherni.jpg" alt="Nour Cherni" class="card-img-top rounded-circle p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Nour Cherni</h5>
+                    <p class="card-text"><strong>Présidente</strong></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Saief Bouali -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card text-center shadow">
+                <img src="ulpoad/saifb.jpg" alt="Saief Bouali" class="card-img-top rounded-circle p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Saief Bouali</h5>
+                    <p class="card-text"><strong>Vice Président</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amenallah Robanna -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card text-center shadow">
+                <img src="ulpoad/robbana.jpg" alt="Amenallah Robbana" class="card-img-top rounded-circle p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Amenallah Robbana</h5>
+                    <p class="card-text"><strong>Ressources Humaines</strong></p>
+                </div>
+            </div>
+        </div>
+        <!-- Yasmine Ben Sta -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card text-center shadow">
+                <img src="ulpoad/yasmine.jpg" alt="Yasmine Ben Sta" class="card-img-top rounded-circle p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Yasmine Ben Sta</h5>
+                    <p class="card-text"><strong>Secrétaire Générale</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wassim Jha -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card text-center shadow">
+                <img src="ulpoad/wassim.jpg" alt="Wassim Jha" class="card-img-top rounded-circle p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Wassim Jha</h5>
+                    <p class="card-text"><strong>Chef Département Communication</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iheb Baccar -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card text-center shadow">
+                <img src="ulpoad/baccar.jpg" alt="Iheb Baccar" class="card-img-top rounded-circle p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Iheb Baccar</h5>
+                    <p class="card-text"><strong>Chef Département Événements</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maha Nourdine -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card text-center shadow">
+                <img src="ulpoad/nourn.jpg" alt="Maha Nourdine" class="card-img-top rounded-circle p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Maha Nourdine</h5>
+                    <p class="card-text"><strong>Chef Département Design</strong></p>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+    <!-- Highlights Section -->
+<section class="container my-5">
+    <h3 class="text-center mb-4">Highlights</h3>
+    <div id="Highlights" class="row justify-content-center mb-4">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <p class="mt-3"><strong>Les événements marquants de notre club.</strong></p>
+                    <div id="carouselHighlights" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/event1infolab.jpg" class="d-block w-100 rounded" alt="Événement 1" height="550">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/event2infolab.jpg" class="d-block w-100 rounded" alt="Événement 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/event3infolab.jpg" class="d-block w-100 rounded" alt="Événement 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/event4infolab.jpg" class="d-block w-100 rounded" alt="Événement 4" height="550">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHighlights" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselHighlights" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Réseaux sociaux -->
+    <h3 class="text-center mt-5 mb-2" id="contact">Réseaux sociaux</h3>
+    <div id="Réseaux sociaux" class="social-icons mt-3">
+        <a href="https://www.facebook.com/profile.php?id=100086193647142&locale=fr_FR" target="_blank" class="text-dark me-3"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/infolab_essect/" target="_blank" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/infolab-essect-321334331/" target="_blank" class="text-dark me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.tiktok.com/@infolabessect?lang=fr"target="_blank" class="text-dark me-3"><i class="fab fa-tiktok fa-2x"></i></a>
+    </div>
+    <br> <br>
+</section>
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2025 ESSECT Clubs. Tous droits réservés.</p>
+    </footer>
+    <!-- End Footer -->
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

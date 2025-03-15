@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Membre - Essect fm</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+    <style>
+
+        footer {
+            position: relative;
+            top: 200%;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+        }
+       
+        .carousel-control-prev,.carousel-control-next {
+            width: 4%;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            filter: invert(1);
+        }
+
+        /* Ajustements spécifiques pour les flèches du deuxième carousel (images) */
+        #carouselExample .carousel-control-prev, 
+        #carouselExample .carousel-control-next {
+            width: 3%; /* Rétrécir la largeur */
+            height: 60px; /* Réduire la hauteur */
+            background-color: rgba(0, 0, 0, 0.5); /* Garder le fond */
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100" >
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="page accueil.html">ESSECT Clubs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#event">Calendrier</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Stars">Stars</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-circle fa-2x"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="modifier.html">Modifier le profil</a></li>
+                        <li><a class="dropdown-item text-danger" href="logout.php">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container d-flex flex-column mt-5 pt-4 align-items-center w-100  ">
+        <h2 class="mb-5 text-center " >Bienvenue, <span class="text-primary">Nom de l'étudiant</span>!</h2>
+        
+            <!-- Informations à gauche -->
+            <div class="col-md-5 d-flex flex-column justify-content-center w-100 ">
+                
+                <div class="card shadow-lg mb-4 w-100 pt-4 bg-dark">
+                    <div class="card-body">
+                        <h4 class="text-secondary">Club : <span class="fw-bold">ESSECT FM </span></h4>
+                        <p class="text-light"><strong>Description :</strong> Essect fm est un espace dynamique pour les passionnés de communication, de journalisme et de technique qui leur permet de produire et animer des émissions,
+                             partager des idées et informer leur audience à travers divers formats radiophoniques.</p>
+                        <p class="text-light"><strong>Date de création :</strong> 2024</p>
+                        <p class="text-light"><strong>Statut :</strong> <span class="badge bg-success">membre</span></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container mt-5" id="event">
+        <h2 class="text-center">Calendrier des événements</h2>
+        <div id="calendarCarousel" class="carousel slide " data-bs-ride="false">
+            <div class="carousel-inner">
+                <!-- Mois de 2024 et 2025 -->
+                <div class="carousel-item active">
+                    <h3 class="text-center">Janvier 2024</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Aucun événement prévu.</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Février 2024</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Découvrez le potentiel de Google et améliorez vos compétences ! Rejoignez-nous pour le programme Google Offered Programs, où nous explorerons en profondeur la diversité des opportunités que Google a à offrir."><strong>Google Offered Programs</strong> : 28 février à 13h30</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Mars 2024</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Introduction aux concepts fondamentaux du Machine Learning, incluant les modèles supervisés et non supervisés, avec des cas pratiques."> <strong>Machine Learning :</strong> 6 mars à partir de 13h30</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Avril 2024</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Événement au café-resto YAS à La Marsa."><strong>CHAKAN FATIR & SOIRÉE:</strong> 5 avril</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Mai 2024</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Aucun événement prévu.</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Octobre 2024</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Analyse des bilans annuels, planification des objectifs futurs et implication des membres dans la prise de décision du club."><strong>Assemblée Générale</strong> : 12 octobre à 11h30</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Comprenez les techniques clés du sponsoring, développez des stratégies de partenariat et apprenez à négocier efficacement."><strong>Formation Sponsoring</strong> : 19 octobre à 11h30</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Novembre 2024</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Formation dédiée aux étudiants en E-Business pour réussir leur PFE."><strong>Réussir mon PFE 2.0</strong> : 23 novembre à 8h30</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Maîtrisez LinkedIn pour mieux préparer votre future carrière."><strong>LinkedIn Conference</strong> : 13 novembre à 13h30</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Janvier 2025</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Nous sommes ravis de vous inviter à un événement unique pour célébrer la fin des examens à Hammamet !"><strong>Sortie :</strong>18 janvier</li>
+                    </ul>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="text-center">Février 2025</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Discussion approfondie sur les projets du second semestre, évaluation des réalisations passées et intégration des nouveaux membres."><strong>Réunion Générale</strong> : 15 février à 11h30</li>
+                        <li class="list-group-item" data-bs-toggle="tooltip" title="Apprenez à organiser, planifier et gérer efficacement des événements en maîtrisant les aspects logistiques, budgétaires et communicationnels."><strong>Gestion des événements</strong> : 27 février à partir de 13h30</li>
+                    </ul>
+                </div>
+              
+            </div>
+            
+            <!-- Contrôles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#calendarCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#calendarCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    
+<!-- Section Photos des Membres -->
+<div id="Stars" class="container mt-5 mb-4">
+    <h2 class="text-center">Nos Stars du Club ! 📸</h2>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicateurs -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- Première série d'images -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/rad1.png" alt="Membre 1" class="d-block w-100" height="250" width="300">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/radio2.jpg" alt="Membre 2" class="d-block w-100" height="250" width="300">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/rad3.png" alt="Membre 3" class="d-block w-100" height="250" width="300">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/rad4.png" alt="Membre 4" class="d-block w-100" height="250" width="300">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deuxième série d'images -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/rad5.png" alt="Membre 5" class="d-block w-100" height="250" width="300">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/rad6.png" alt="Membre 6" class="d-block w-100" height="250" width="300">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/rad7.png" alt="Membre 7" class="d-block w-100" height="250" width="300">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <img src="images/rad8.png" alt="Membre 8" class="d-block w-100" height="250" width="300">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contrôles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </div>
+</div>
+
+<div class="container mt-5" id="contact">
+    <h2 class="text-center mb-4">Contact</h2>
+    <div class="row">
+        <!-- Partie Contact -->
+        <div class="col-md-6 ">
+            <div class="card shadow p-3 bg-dark text-light">
+                <div class="card-body">
+                    <h5 class="card-title">Contactez le Chef RH</h5>
+                    <p><strong>Nom :</strong>  Abdi</p>
+                    <p><strong>Prénom :</strong> Islem</p>
+                    <p><strong>Email :</strong> <a href="mailto:abdi.islem@gmail.com">abdi.islem@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Partie Formulaire -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow p-3 bg-dark text-light">
+                <div class="card-body">
+                    <h5 class="card-title ">Laissez un Message au chef département</h5>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Votre Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Remarque, suggestion...</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger text-light ">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+     <!-- Footer -->
+     <footer class="text-white text-center py-3">
+        <p>&copy; 2025 ESSECT Clubs. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
